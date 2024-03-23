@@ -46,6 +46,8 @@ class ConfigReader:
         self.auto_detect_resolution = None
         self.resolution_x = None
         self.resolution_y = None
+        self.offset_x = None
+        self.offset_y = None
 
         # Aim
         self.offset = None
@@ -144,6 +146,9 @@ class ConfigReader:
 
         self.resolution_x = int(self.parser.get('screen', 'resolution_x'))
         self.resolution_y = int(self.parser.get('screen', 'resolution_y'))
+
+        self.offset_x = int(self.parser.get('screen', 'offset_x'))
+        self.offset_y = int(self.parser.get('screen', 'offset_y'))
 
         # Get aim settings
         self.offset = int(self.parser.get('aim', 'offset'))

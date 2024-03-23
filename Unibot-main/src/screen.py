@@ -43,8 +43,8 @@ class Screen:
 
         self.screen_center = (self.screen[0] // 2, self.screen[1] // 2)
         self.screen_region = (
-            0,
-            0,
+            config.offset_x,
+            config.offset_y,
             self.screen[0],
             self.screen[1]
         )
